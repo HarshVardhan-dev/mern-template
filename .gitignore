@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# OS Files
+.DS_Store
+
+# Frontend Build Files
+/frontend/build/
+
+# Debugging Files
+*.swp
+*.swo
