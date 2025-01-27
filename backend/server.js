@@ -54,6 +54,18 @@ mongoose
 // Routes
 app.get("/", (req, res) => res.send("API is running 🌟"));
 
+// New route to send a JSON response
+app.get("/api/data", (req, res) => {
+  res.json({
+    message: "Hello from the backend! 🚀",
+    status: "Connected",
+    data: {
+      version: "1.0.0",
+      description: "MERN Starter Template",
+    },
+  });
+});
+
 // Handle unhandled rejections
 process.on("unhandledRejection", (err) => {
   console.error(
